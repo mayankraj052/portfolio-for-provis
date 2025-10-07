@@ -4,48 +4,19 @@ import { Briefcase, Calendar, MapPin, ChevronRight, Sparkles, Building2 } from "
 export default function Experience() {
   const experience = [
     {
-      position: "Machine Learning Intern",
-      company: "Tech Solutions Inc.",
+      position: "AI-ML Virtual Intern",
+      company: "EduSkill",
       location: "Remote",
-      duration: "Jun 2024 - Present",
-      type: "Internship",
-      description: "Developed and deployed machine learning models for predictive analytics, improving accuracy by 25%. Collaborated with cross-functional teams to integrate AI solutions into production systems.",
+      duration: "July 2024 - September 2024",
+      type: "Virtual Internship",
+      description: "Completed an AI-ML virtual internship, learning TensorFlow and PyTorch. Worked on real-world machine learning problems, gaining hands-on experience in model training and deployment.",
       achievements: [
-        "Built ensemble models with 95% accuracy",
-        "Optimized model inference time by 40%",
-        "Presented findings to stakeholders"
+        "Gained hands-on experience in TensorFlow and PyTorch",
+        "Worked on real-world ML problem statements",
+        "Deployed basic models successfully"
       ],
-      tech: ["Python", "TensorFlow", "Docker", "AWS"]
-    },
-    {
-      position: "Full Stack Developer",
-      company: "StartUp Ventures",
-      location: "Hybrid",
-      duration: "Jan 2024 - May 2024",
-      type: "Part-time",
-      description: "Designed and implemented responsive web applications using React and Node.js. Led the development of RESTful APIs and integrated third-party services for enhanced functionality.",
-      achievements: [
-        "Delivered 3 client projects on time",
-        "Reduced load time by 50%",
-        "Mentored 2 junior developers"
-      ],
-      tech: ["React", "Node.js", "MongoDB", "Express"]
-    },
-    {
-      position: "Software Development Intern",
-      company: "Digital Innovations",
-      location: "On-site",
-      duration: "Jun 2023 - Dec 2023",
-      type: "Internship",
-      description: "Contributed to the development of enterprise applications using Java and Spring Boot. Participated in code reviews and implemented best practices for clean, maintainable code.",
-      achievements: [
-        "Fixed 50+ production bugs",
-        "Improved code coverage to 85%",
-        "Automated testing workflows"
-      ],
-      tech: ["Java", "Spring Boot", "MySQL", "Jenkins"]
-    }
-  ];
+      tech: ["Python", "TensorFlow", "PyTorch"]
+    }]
 
   return (
     <section id="experience" className="relative py-20 md:py-32 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
@@ -75,7 +46,7 @@ export default function Experience() {
 
           <div className="space-y-12">
             {experience.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className={`relative lg:flex lg:items-center ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}
               >

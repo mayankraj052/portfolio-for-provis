@@ -7,52 +7,45 @@ import {
 export default function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      color: "from-violet-500 to-purple-500",
-      icon: Code2,
-      skills: [
-        { name: "React", level: "Advanced", proficiency: 90, icon: Box },
-        { name: "Next.js", level: "Intermediate", proficiency: 80, icon: Layers },
-        { name: "TypeScript", level: "Advanced", proficiency: 85, icon: Code2 },
-        { name: "Tailwind CSS", level: "Advanced", proficiency: 90, icon: Sparkles },
-      ]
-    },
-    {
-      title: "Backend Development",
-      color: "from-fuchsia-500 to-pink-500",
-      icon: Server,
-      skills: [
-        { name: "Node.js", level: "Advanced", proficiency: 85, icon: Terminal },
-        { name: "Express", level: "Advanced", proficiency: 85, icon: Server },
-        { name: "Python", level: "Advanced", proficiency: 90, icon: Code2 },
-        { name: "Java", level: "Intermediate", proficiency: 75, icon: Code2 },
-      ]
-    },
-    {
-      title: "AI & Machine Learning",
-      color: "from-indigo-500 to-blue-500",
-      icon: Brain,
-      skills: [
-        { name: "TensorFlow", level: "Advanced", proficiency: 85, icon: Brain },
-        { name: "PyTorch", level: "Intermediate", proficiency: 75, icon: Cpu },
-        { name: "Scikit-learn", level: "Advanced", proficiency: 80, icon: Zap },
-        { name: "Deep Learning", level: "Intermediate", proficiency: 75, icon: Brain },
-      ]
-    },
-    {
-      title: "Database & Cloud",
-      color: "from-cyan-500 to-teal-500",
-      icon: Database,
-      skills: [
-        { name: "MongoDB", level: "Advanced", proficiency: 85, icon: Database },
-        { name: "MySQL", level: "Advanced", proficiency: 80, icon: Database },
-        { name: "AWS", level: "Intermediate", proficiency: 25, icon: Cloud },
-        { name: "Docker", level: "Intermediate", proficiency: 75, icon: Box },
-      ]
-    }
-  ];
+const skillCategories = [
+  {
+    title: "Frontend Development",
+    color: "from-violet-500 to-purple-500",
+    icon: Code2,
+    skills: [
+      { name: "React", level: "Intermediate", proficiency: 70, icon: Layers },
+      { name: "Next.js", level: "Intermediate", proficiency: 65, icon: Layers },
+    ]
+  },
+  {
+    title: "Backend Development",
+    color: "from-fuchsia-500 to-pink-500",
+    icon: Server,
+    skills: [
+      { name: "Express.js", level: "Intermediate", proficiency: 70, icon: Server },
+      { name: "Python", level: "Intermediate", proficiency: 70, icon: Code2 },
+      { name: "Core Java", level: "Intermediate", proficiency: 70, icon: Code2 },
+      { name: "SQL", level: "Intermediate", proficiency: 70, icon: Database },
+    ]
+  },
+  {
+    title: "AI & Machine Learning",
+    color: "from-indigo-500 to-blue-500",
+    icon: Brain,
+    skills: [
+      { name: "Machine Learning", level: "Intermediate", proficiency: 70, icon: Zap },
+    ]
+  },
+  {
+    title: "Cloud & Tools",
+    color: "from-cyan-500 to-teal-500",
+    icon: Database,
+    skills: [
+      { name: "AWS", level: "Learning", proficiency: 35, icon: Cloud },
+      { name: "Docker", level: "Intermediate", proficiency: 50, icon: Box },
+    ]
+  }
+];
 
   return (
     <section id="skills" className="relative py-20 md:py-32 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">

@@ -7,40 +7,40 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "AI-Powered Medical Diagnosis System",
-      description: "An ensemble learning model for accurate medical data classification using deep learning techniques. Achieved 95% accuracy in disease prediction.",
-      tech: ["Python", "TensorFlow", "Scikit-learn", "Flask", "React"],
-      demo: "https://demo-link.com",
-      code: "https://github.com/username/project",
+      title: "AI-Powered Finance Management System",
+      description: "A full-stack finance management app that supports multiple accounts, expense/income tracking, chart visualizations, AI-based receipt scanning using Gemini, and daily/monthly email updates. Built with Supabase, Tailwind, Prisma, and deployed on Vercel.",
+      tech: ["Next.js", "Tailwind CSS", "Supabase", "Gemini AI", "Prisma", "Inngest", "Resend", "Recharts"],
+      demo: "https://wealth-ebon.vercel.app/",
+      code: "https://github.com/mayankraj052/AI_Money_Management",
+      category: "Web Dev",
+      icon: Layers
+    },
+    {
+      title: "Diabetes Prediction",
+      description: "A machine learning model for diabetes prediction using Flask and scikit-learn.",
+      tech: ["ML", "Flask", "NumPy", "scikit-learn", "HTML", "CSS", "Bootstrap"],
+      demo: "https://diabetes-prediction-college-project.onrender.com",
+      code: "https://github.com/mayankraj052/Diabetes-Prediction",
       category: "AI/ML",
       icon: Zap
     },
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with real-time inventory management, payment integration, and responsive design.",
-      tech: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      demo: "https://demo-link.com",
-      code: "https://github.com/username/project",
+      title: "Real-Time Video Call App",
+      description: "A video calling application where users can find and connect using their username, built with WebSockets.",
+      tech: ["React", "WebSocket", "Node.js", "Express"],
+      demo: "https://react-video-call-xvq3.onrender.com",
+      code: "https://github.com/mayankraj052/react-video_call",
       category: "Web Dev",
       icon: Layers
     },
     {
-      title: "Cloud-Based CI/CD Pipeline",
-      description: "Automated deployment pipeline using Docker, Kubernetes, and Jenkins for seamless application delivery and scaling.",
-      tech: ["Docker", "Kubernetes", "Jenkins", "AWS", "Terraform"],
-      demo: "https://demo-link.com",
-      code: "https://github.com/username/project",
-      category: "DevOps",
-      icon: Code2
-    },
-    {
-      title: "Real-Time Chat Application",
-      description: "A feature-rich chat platform with end-to-end encryption, file sharing, and video calling capabilities.",
-      tech: ["React", "Socket.io", "Node.js", "WebRTC", "Redis"],
-      demo: "https://demo-link.com",
-      code: "https://github.com/username/project",
-      category: "Web Dev",
-      icon: Layers
+      title: "Real-Time Object Detection",
+      description: "Object detection system using YOLO for real-time identification of objects.",
+      tech: ["YOLO", "OpenCV", "Deep Learning", "Python"],
+      demo: "#",
+      code: "#",
+      category: "AI/ML",
+      icon: Zap
     }
   ];
 
