@@ -1,22 +1,8 @@
-import { useState, useEffect } from "react";
 import { Sparkles, Code2, Brain, Server, Github, Linkedin, Mail, X } from "lucide-react";
 import Bottomdecorator from "./ui/Bottomdecorator";
 import BadgeText from "./ui/BadgeText";
 
 export default function Hero() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 20,
-        y: (e.clientY / window.innerHeight) * 20,
-      });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
   const techStack = [
     { icon: Brain, label: "AI/ML", color: "from-violet-500 to-purple-500" },
     { icon: Code2, label: "Web Dev", color: "from-fuchsia-500 to-pink-500" },
@@ -24,7 +10,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="relative w-full text-center z-10">
+    <div className="relative w-full text-center z-10 pt-24">
       {/* Greeting Badge */}
       <BadgeText text="Welcome to my portfolio"/>
 
@@ -69,7 +55,7 @@ export default function Hero() {
           <a href="https://github.com/mayankraj052" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Github className="h-6 w-6" />
           </a>
-          <a href="https://linkedin.com/in/mayankraj052" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://linkedin.com/in/mayank052" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Linkedin className="h-6 w-6" />
           </a>
           <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
