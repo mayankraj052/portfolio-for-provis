@@ -8,6 +8,7 @@ import Experience from './components/Experience'
 import Certification from './components/Certification'
 import Contact from './components/Contacts'
 import Contacts from './components/Contacts'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Experience />
       <Certification />
       <Contacts />
+      <Footer/>
     </div>
   )
 }

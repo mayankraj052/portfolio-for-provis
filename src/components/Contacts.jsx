@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-violet-500/50 via-fuchsia-500/50 to-indigo-500/50 -translate-x-1/2"></div>
 
           <div className="space-y-12">
-            <div className="relative lg:flex lg:items-start lg:gap-12">
+            <div className="relative lg:flex lg:items-start lg:gap-12 mt-2">
               {/* Contact Form */}
               <div className="lg:w-[calc(50%-2rem)] w-full lg:pr-6">
                 <div className="group relative">
@@ -118,7 +118,7 @@ export default function Contact() {
               </div>
 
               {/* Contact Info & Social Links */}
-              <div className="lg:w-[calc(50%-2rem)] w-full lg:pl-6 space-y-8">
+              <div className="lg:w-[calc(50%-2rem)] w-full lg:pl-6 space-y-8 mt-5">
                 {/* Contact Info */}
                 {contactInfo.map((info, index) => {
                   const Icon = info.icon;
