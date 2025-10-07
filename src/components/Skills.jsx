@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import {
-  Code2, Layers, Brain, Terminal, Box, Sparkles, Server, Database, Cloud, Zap, Globe, Cpu
-} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Code2, Layers, Brain, Box, Server, Database, Cloud, Zap } from "lucide-react";
+import BadgeText from "./ui/BadgeText";
 
 export default function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
@@ -25,7 +24,7 @@ export default function Skills() {
         { name: "Express.js", level: "Intermediate", proficiency: 70, icon: Server },
         { name: "Python", level: "Intermediate", proficiency: 70, icon: Code2 },
         { name: "Core Java", level: "Intermediate", proficiency: 70, icon: Code2 },
-        { name: "SQL", level: "Intermediate", proficiency: 70, icon: Database },
+        { name: "SQL", level: "Advance", proficiency: 90, icon: Database },
       ]
     },
     {
@@ -48,9 +47,11 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="relative py-20 md:py-32 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+    <section id="skills" className="relative py-20 md:py-32">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div className="text-center mb-16">
+          <BadgeText text="What I Learn"/>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Skills & <span className="bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">Technologies</span>
           </h2>
@@ -59,13 +60,13 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid  grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {skillCategories.map((category, idx) => {
             const CategoryIcon = category.icon;
             return (
               <Card
                 key={idx}
-                className={`group relative border border-slate-700/50 bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 hover:border-violet-500/50 transition-all duration-300`}
+                className={`group relative border border-slate-700/50 rounded-2xl p-6 hover:border-violet-500/50 transition-all duration-300`}
               >
                 <CardHeader className="flex items-center gap-3 mb-6">
                   <div className={`bg-gradient-to-br ${category.color} p-3 rounded-xl`}>
@@ -96,10 +97,9 @@ export default function Skills() {
                         <div className="relative h-2 bg-slate-700/50 rounded-full overflow-hidden">
                           <div
                             className={`absolute inset-y-0 left-0 bg-gradient-to-r ${category.color} rounded-full transition-all duration-1000 ease-out`}
-                            style={{ width: `${skill.proficiency}%` }} // Always show progress
+                            style={{ width: `${skill.proficiency}%` }}
                           ></div>
                         </div>
-
                       </div>
                     );
                   })}

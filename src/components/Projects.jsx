@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ExternalLink, Github, Sparkles, Code2, Layers, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import BadgeText from "./ui/BadgeText";
 
 export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -45,19 +46,11 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="relative py-20 md:py-32 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-fuchsia-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl" />
-
+    <section id="projects" className="relative py-20 md:py-32 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 text-sm font-medium">
-            <Sparkles className="h-4 w-4 text-violet-400" />
-            <span>What I've built</span>
-          </div>
+          <BadgeText text="What I've built"/>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Featured <span className="bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">Projects</span>
           </h2>
@@ -77,9 +70,6 @@ export default function Projects() {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-indigo-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-
                 <CardHeader className="flex items-center justify-between mb-4 p-0">
                   <div className="flex items-center gap-3">
                     <div className="bg-gradient-to-br from-violet-500 to-indigo-500 p-2.5 rounded-xl">
