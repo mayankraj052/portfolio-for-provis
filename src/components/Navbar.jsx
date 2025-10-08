@@ -62,7 +62,7 @@ export default function Navbar() {
             asChild
             className="ml-6 relative overflow-hidden bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white border-0 shadow-lg shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 group"
           >
-            <a href="/Mayank_Raj_Resume.pdf" download className="flex items-center gap-3 px-6 py-3 text-xl md:text-2xl">
+            <a href="/Mayank_Raj.pdf" download className="flex items-center gap-3 px-6 py-3 text-xl md:text-2xl">
               <Download className="h-5 w-5 group-hover:animate-bounce" />
               <span>Resume</span>
               <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
